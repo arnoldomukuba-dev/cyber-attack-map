@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pro Cyber Attack Dashboard</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Pro Cyber Attack Intelligence Dashboard</h1>
+</header>
+
+<div id="map"></div>
+
+<div class="controls">
+<button onclick="toggleType('DDoS')">Toggle DDoS</button>
+<button onclick="toggleType('Malware')">Toggle Malware</button>
+<button onclick="toggleType('Phishing')">Toggle Phishing</button>
+</div>
+
+<div class="dashboard">
+<div class="card">
+<h3>Total Attacks</h3>
+<p id="total">0</p>
+</div>
+<div class="card">
+<h3>DDoS</h3>
+<p id="ddos">0</p>
+</div>
+<div class="card">
+<h3>Malware</h3>
+<p id="malware">0</p>
+</div>
+<div class="card">
+<h3>Phishing</h3>
+<p id="phishing">0</p>
+</div>
+<div class="card">
+<h3>Top Countries</h3>
+<ul id="topCountries">
+<li>–</li>
+<li>–</li>
+<li>–</li>
+<li>–</li>
+<li>–</li>
+</ul>
+</div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-heat/dist/leaflet-heat.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
